@@ -1,44 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>My Website</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
-            text-align: center;
-            background: #f5f5f5;
-            color: #222;
-        }
-
-        h1 {
-            font-size: 3rem;
-        }
-
-        a {
-            color: #555;
-            margin: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It's In The Game</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #111;
+      text-align: center;
+      margin: 20;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fff;
+      padding: 20;
+      overflow: hidden;
+    }
+    header img {
+      max-height: 400px;
+      max-width: 400px;
+      width: 80%; 
+      object-fit: cover;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin: 1.5rem 0 1.5rem 0;
+      letter-spacing: 1px;
+    }
+    p.tagline {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .links a {
+      border: 2px solid #ddd;
+      border-radius: 22px;
+      padding: 0.6rem 1.2rem;
+      transition: all 0.2s ease-in-out;
+      background: white;
+      color: #cc0600;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .links a:hover {
+      background: #cc0600;
+      color: #eee;
+      border-color: #cc0600;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 1.5rem 0 2rem 0;
+    }
+    .black-link {
+      color: #cc0600;
+      text-decoration: none;
+    }
+  </style>
 </head>
-
 <body>
+  <header>
+   <!-- <img src="Logo BLACK.png" alt="Stooshy logo"> -->
+  </header>
 
-    <h1>Hello!</h1>
+  <main>
+    <h1>Stooshy</h1>
+    <div class="links">
+      <a href="https://open.spotify.com/artist/33VXTYGkNiI6XPqmSYOCIT" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://music.apple.com/us/artist/stooshy/1363193962" target="_blank" rel="noopener">Apple Music</a>
+      <a href="https://www.youtube.com/@ohstooshy" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.instagram.com/ohstooshy/?hl=en-gb" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:stooshy@gmail.com" target="_blank" rel="noopener">Email</a>
+   
+      <a href="https://wa.me/447988649593" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
 
-    <p>Welcome to my website.</p>
-
-    <p>
-        <a href="#">Instagram</a>
-        <a href="#">Spotify</a>
-        <a href="#">Apple Music</a>
-    </p>
-
+    <footer>
+      <p><b>Upcoming Gigs</b></p>
+      <p><a class="black-link" href="https://www.itsinthegame.co.uk" target="_blank" rel="noopener noreferrer">Cellar Aberdeen - Fri 6th November</a></p>
+      <p><b>Selected Recording Works</b></p>
+      <p><a class="black-link" href="https://open.spotify.com/album/40lLabkMaSMbtF8GCZhNUB" target="_blank" rel="noopener noreferrer">The Dead &amp; Buried (2018)</a></p>
+      <p><a class="black-link" href="https://open.spotify.com/album/3uiB8vCaxRRpUH63PfkTov" target="_blank" rel="noopener noreferrer">Salad Daze (2023)</a></p>
+      <p><a class="black-link" href="https://open.spotify.com/album/23KzbxE2aLOEYXIAwFgDev" target="_blank" rel="noopener noreferrer">Howling Winds (2021)</a></p>
+      <p><a class="black-link" href="https://open.spotify.com/track/0OoWEAAfaOuBJvS3chboCs" target="_blank" rel="noopener noreferrer">Passengers of History (2022)</a></p>
+      <p><a class="black-link" href="https://open.spotify.com/album/4lIsi0cgcOC1fB8Wh5cjxH" target="_blank" rel="noopener noreferrer">Celtic Beast (2023)</a></p>
+    </footer>
+  </main>
 </body>
 </html>
