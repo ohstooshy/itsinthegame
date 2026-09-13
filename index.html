@@ -1,101 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It's In The Game</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.png">
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #ffffff;
-      color: #111;
-      text-align: center;
-      margin: 20;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #fff;
-      padding: 20;
-      overflow: hidden;
-    }
-    header img {
-      max-height: 400px;
-      max-width: 400px;
-      width: 80%; 
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
-    }
-    h1 {
-      font-size: 2.8rem;
-      margin: 1.5rem 0 1.5rem 0;
-      letter-spacing: 1px;
-    }
-    p.tagline {
-      font-size: 1.1rem;
-      color: #555;
-      margin-bottom: 2rem;
-    }
-    .links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .links a {
-      border: 2px solid #ddd;
-      border-radius: 22px;
-      padding: 0.6rem 1.2rem;
-      transition: all 0.2s ease-in-out;
-      background: white;
-      color: #1b74bc;
-      font-weight: 500;
-      text-decoration: none;
-    }
-    .links a:hover {
-      background: #1b74bc;
-      color: #eee;
-      border-color: #1b74bc;
-    }
-    footer {
-      font-size: 0.9rem;
-      color: #777;
-      margin: 1.5rem 0 2rem 0;
-    }
-    .black-link {
-      color: #1b74bc;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>It's In The Game</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Libre Baskerville - free, elegant serif font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #e8dfcf;
+            color: #24211d;
+            font-family: "Libre Baskerville", Georgia, serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .logo {
+            width: min(500px, 80%);
+            height: auto;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 7vw, 5rem);
+            line-height: 1;
+            margin: 0 0 35px;
+            font-weight: 700;
+            letter-spacing: -2px;
+        }
+
+        .description {
+            max-width: 680px;
+            margin: 0 auto 45px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            display: inline-block;
+            padding: 14px 24px;
+            border: 1px solid #24211d;
+            color: #24211d;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+
+        .links a:hover {
+            background: #24211d;
+            color: #e8dfcf;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.75rem;
+            opacity: 0.6;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-   <img src="logo.png" alt="IITG logo">
-  </header>
 
-  <main>
-    <h1>It's In The Game</h1>
-    <div class="links">
-      <a href="https://www.youtube.com/@ohstooshy" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.instagram.com/ohstooshy/?hl=en-gb" target="_blank" rel="noopener">Instagram</a>
-      <a href="mailto:stooshy@gmail.com" target="_blank" rel="noopener">Email</a>
-    </div>
+    <main class="container">
 
-    <footer>
-      <p><b>Upcoming Gigs</b></p>
-      <p><a class="black-link" href="https://www.itsinthegame.co.uk" target="_blank" rel="noopener noreferrer">Cellar Aberdeen - Fri 6th November</a></p>
-     <!-- 
-      <p><b>Selected Recording Works</b></p>
-      <p><a class="black-link" href="https://open.spotify.com/album/40lLabkMaSMbtF8GCZhNUB" target="_blank" rel="noopener noreferrer">The Dead &amp; Buried (2018)</a></p>
-      <p><a class="black-link" href="https://open.spotify.com/album/3uiB8vCaxRRpUH63PfkTov" target="_blank" rel="noopener noreferrer">Salad Daze (2023)</a></p>
-      <p><a class="black-link" href="https://open.spotify.com/album/23KzbxE2aLOEYXIAwFgDev" target="_blank" rel="noopener noreferrer">Howling Winds (2021)</a></p>
-      <p><a class="black-link" href="https://open.spotify.com/track/0OoWEAAfaOuBJvS3chboCs" target="_blank" rel="noopener noreferrer">Passengers of History (2022)</a></p>
-      <p><a class="black-link" href="https://open.spotify.com/album/4lIsi0cgcOC1fB8Wh5cjxH" target="_blank" rel="noopener noreferrer">Celtic Beast (2023)</a></p>
-    -->
-    </footer>
-  </main>
+        <img src="logo.png" alt="It's In The Game" class="logo">
+
+        <h1>It's In The Game</h1>
+
+        <p class="description">
+            It's In The Game are Scotlands first FIFA tribute band, exclusively playing
+            all your favourite songs from FIFA games. Landfull indie, rock n roll, and
+            a few surprises thrown in! The good news is, you don't have to be a football
+            fan to love It's In The Game. You just need to be a fan of big tunes.
+        </p>
+
+        <div class="links">
+            <a href="https://www.instagram.com/YOURINSTAGRAM/" target="_blank" rel="noopener">
+                Instagram
+            </a>
+
+            <a href="YOUR-GIG-LINK-HERE" target="_blank" rel="noopener">
+                Next Gig
+            </a>
+        </div>
+
+        <footer>
+            © It's In The Game
+        </footer>
+
+    </main>
+
 </body>
 </html>
