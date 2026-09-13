@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>It's In The Game</title>
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Free Garamond-style font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            background: #ded3bd;
+        }
+
+        body {
+            margin: 0;
+            background: #ded3bd;
+            color: #171717;
+            font-family: "EB Garamond", Garamond, Georgia, serif;
+        }
+
+        .page {
+            width: 92%;
+            max-width: 900px;
+            margin: 35px auto;
+            padding: 25px 35px 30px;
+            background: #eee6d5;
+            border: 1px solid #171717;
+            box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid #171717;
+            padding-bottom: 25px;
+        }
+
+        .logo {
+            display: block;
+            width: min(470px, 90%);
+            height: auto;
+            margin: 5px auto 20px;
+        }
+
+        h1 {
+            font-size: clamp(2.8rem, 8vw, 6rem);
+            font-weight: 500;
+            line-height: 0.85;
+            letter-spacing: -3px;
+            margin: 0;
+        }
+
+        .strapline {
+            margin-top: 12px;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            padding: 13px 0;
+            border-bottom: 1px solid #171717;
+            font-family: Georgia, serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        nav a {
+            color: #171717;
+            margin: 0 12px;
+            text-decoration: underline;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+        }
+
+        .content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            font-size: 1.35rem;
+            line-height: 1.45;
+            margin: 45px 0;
+        }
+
+        .gig {
+            border-top: 3px double #171717;
+            border-bottom: 3px double #171717;
+            padding: 20px 10px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .gig-label {
+            font-family: Georgia, serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .gig h2 {
+            font-size: 2.3rem;
+            font-weight: 600;
+            margin: 5px 0;
+        }
+
+        .gig p {
+            font-size: 1.1rem;
+            margin: 5px 0 15px;
+        }
+
+        .gig a {
+            color: #171717;
+            font-family: Georgia, serif;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            font-family: Georgia, serif;
+            font-size: 0.75rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 45px 0 15px;
+        }
+
+        .quote {
+            text-align: center;
+            font-size: 2rem;
+            font-style: italic;
+            line-height: 1.1;
+            margin: 30px auto;
+            max-width: 600px;
+        }
+
+        .links {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .links a {
+            color: #171717;
+            font-size: 1.25rem;
+            margin: 0 15px;
+            text-decoration: underline;
+        }
+
+        .links a:hover {
+            text-decoration: none;
+        }
+
+        footer {
+            border-top: 1px solid #171717;
+            margin-top: 50px;
+            padding-top: 15px;
+            text-align: center;
+            font-family: Georgia, serif;
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .small-print {
+            margin-top: 8px;
+            font-size: 0.6rem;
+            opacity: 0.65;
+        }
+
+        @media (max-width: 600px) {
+            .page {
+                width: 96%;
+                margin: 15px auto;
+                padding: 20px 18px;
+            }
+
+            nav a {
+                margin: 0 5px;
+            }
+
+            .intro {
+                font-size: 1.2rem;
+            }
+
+            .quote {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <header>
+        <img src="logo.png" alt="It's In The Game" class="logo">
+
+        <h1>It's In The Game</h1>
+
+        <div class="strapline">
+            Scotland's First FIFA Tribute Band
+        </div>
+    </header>
+
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gigs">Gigs</a>
+        <a href="https://www.instagram.com/YOURINSTAGRAM/" target="_blank">
+            Instagram
+        </a>
+    </nav>
+
+
+    <main class="content">
+
+        <section id="about">
+
+            <p class="intro">
+                It's In The Game are Scotlands first FIFA tribute band,
+                exclusively playing all your favourite songs from FIFA games.
+                Landfull indie, rock n roll, and a few surprises thrown in!
+                The good news is, you don't have to be a football fan to love
+                It's In The Game. You just need to be a fan of big tunes.
+            </p>
+
+        </section>
+
+
+        <section id="gigs">
+
+            <div class="gig">
+
+                <div class="gig-label">
+                    ★ Next Gig ★
+                </div>
+
+                <h2>YOUR NEXT GIG HERE</h2>
+
+                <p>
+                    DATE · VENUE · CITY
+                </p>
+
+                <a href="YOUR-GIG-LINK-HERE" target="_blank">
+                    More information / Tickets →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <div class="section-title">
+            What we do
+        </div>
+
+        <div class="quote">
+            FIFA anthems.<br>
+            Big tunes.<br>
+            No football knowledge required.
+        </div>
+
+
+        <div class="links">
+
+            <a href="https://www.instagram.com/YOURINSTAGRAM/"
+               target="_blank">
+                Instagram
+            </a>
+
+            <a href="YOUR-GIG-LINK-HERE"
+               target="_blank">
+                Next Gig
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        IT'S IN THE GAME · SCOTLAND · EST. 2026
+
+        <div class="small-print">
+            Best viewed with the volume turned up.
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
